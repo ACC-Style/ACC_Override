@@ -4,7 +4,7 @@
 @import "alc/spacing";
 @import "alc/border";
 #acc-login-container, #override-container{
-	@import "override/search-bar";	
+
 	@import "alc/panel";
 	@import "alc/alert";
 	font-size: 16px;
@@ -21,24 +21,13 @@
 	.acc-login-content{
 		padding-top:2em;
 	}
-	#separator hr,.separator, hr{
+	#separator hr{
 		border-top: $acc-blue 1.5em solid;
 	}
-	h1{ @extend .fs_6; @extend .fw-m;  @extend .fc-acc-blue; @extend .m-b_025;}
-	h2{ @extend .fs_5; @extend .fw-m; @extend .fc-scrub-teal;}
-	h3{ @extend .fs_4; @extend .fc-scrub-teal;}
-	h4{ @extend .fs_3;}
-	h5{ @extend .fs_2;}
-	h6{ @extend .fs_1;}
-	p{ 
-		@extend .fs_0; @extend .lh-normal;
-		&.lead{
-			@extend .fs_1;
-			 @extend .lh-loose;
-		}
-
+	.separator, hr{
+		border-top: $acc-blue 1px solid;
+		@extend .m-b_2;
 	}
-	small{ @extend .fs-1;}
 	.tiny-text{@extend .fs-2;}
 	.btn{ 
 		@extend .fs_1;
@@ -73,5 +62,42 @@
 	@import "alc/input";
 
 }
+#acc-login-container{
+	h1{ @extend .fs_6; @extend .fw-m;  @extend .fc-acc-blue;}
+	h2{ @extend .fs_5; @extend .fw-m; @extend .fc-scrub-teal;}
+	h3{ @extend .fs_4; @extend .fc-scrub-teal;}
+	h4{ @extend .fs_3;}
+	h5{ @extend .fs_2; @extend .m-b_025;}
+	h6{ @extend .fs_1; @extend .m-b_025;}
+	p{ 
+		@extend .fs_0; @extend .lh-normal;
+		&.lead{
+			@extend .fs_1;
+			 @extend .lh-loose;
+		}
+
+	}
+	small{ @extend .fs-1;}
 	@import "alc/professional-type";
+
+}
+#override-container{
+	@import "override/search-bar";	
+	h1{ @extend .fs_4; @extend .fw-m;  @extend .fc-acc-blue; @extend .m-b_025;}
+	h2{ @extend .fs_3; @extend .fw-m; @extend .fc-scrub-teal;}
+	h3{ @extend .fs_2; @extend .fc-scrub-teal;}
+	h4{ @extend .fs_1;}
+	h5{ @extend .fs_0; @extend .fw-m; @extend .fc-acc-blue; @extend .m-b_025;}
+	h6{ @extend .fs_0; @extend .fw-m;@extend .fc-scrub-teal; @extend .m-b_025;}
+	p{ 
+		@extend .fs_0; @extend .lh-normal;
+		&.lead{
+			@extend .fs_1;
+			 @extend .lh-loose;
+		}
+
+	}
+	small{ @extend .fs-1;}
+}
+
 
