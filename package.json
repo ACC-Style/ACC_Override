@@ -1,0 +1,49 @@
+{
+  "name": "accoverride",
+  "version": "1.0.0",
+  "description": "Override Styles for ACC.org",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattWatier/ACC-Bristol_Foundation6"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.5.0",
+    "babel": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "cssnano": "^3.10.0",
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^2.2.0",
+    "grunt-babel": "^6.0.0",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-connect": "^0.9.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-cssmin": "^0.13.0",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-uglify": "^0.8.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-dart-sass": "^1.0.0",
+    "grunt-postcss": "^0.9.0",
+    "grunt-rename": "^0.1.4",
+    "load-grunt-tasks": "^3.5.2",
+    "pixrem": "^4.0.1",
+    "q": "^1.4.1",
+    "sass": "^1.14.0"
+  },
+  "dependencies": {
+    "pagerjs": "^1.1.0",
+    "sass-convert": "^0.5.0"
+  },
+  "bugs": {
+    "url": "https://github.com/MattWatier/ACC-Bristol_Foundation6/issues"
+  },
+  "homepage": "https://github.com/MattWatier/ACC-Bristol_Foundation6/blob/master/README.md",
+  "main": "GruntFile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
