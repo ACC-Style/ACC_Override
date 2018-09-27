@@ -7,6 +7,8 @@
 /// @type color
 $acc-blue:#00386b;
 $scrub-teal:#198dae;
+$scrub-teal-dark:#15677A;
+$scrub-teal-light:#1AA9C9;
 $scrub-blue:#018adb;
 $scrub-green:#1abc9c;
 $scrub-purple:#7d5891;
@@ -43,14 +45,22 @@ $scrub-leafgreen:#70cd40;
 @mixin build_color($label,$style) {
 	.#{$label}-acc-blue{ 			#{$style}:$acc-blue;}
 	.#{$label}-scrub-teal{ 			#{$style}:$scrub-teal;}
+	.#{$label}-scrub-teal-dark{ 	#{$style}:$scrub-teal-dark;}
+	.#{$label}-scrub-teal-light{ 	#{$style}:$scrub-teal-light;}
 	.#{$label}-scrub-blue{ 			#{$style}:$scrub-blue;}
 	.#{$label}-scrub-green{ 		#{$style}:$scrub-green;}
 	.#{$label}-scrub-purple{ 		#{$style}:$scrub-purple;}
 	.#{$label}-error-red{ 			#{$style}:$error-red;}
 	.#{$label}-warning-orange{ 		#{$style}:$warning-orange;}
 	.#{$label}-black{ 				#{$style}:$black;}
+	.#{$label}-grey-90{ 			#{$style}:grey(90);}
+	.#{$label}-grey-70{ 			#{$style}:grey(70);}
+	.#{$label}-grey-50{ 			#{$style}:grey(50);}
+	.#{$label}-grey-30{ 			#{$style}:grey(30);}
+	.#{$label}-grey-10{ 			#{$style}:grey(10);}
 	.#{$label}-white{ 				#{$style}:white;}
  }
+
 
 .bg-color-transition{
   -webkit-transition: background-color 1s ease-out;

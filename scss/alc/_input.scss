@@ -1,6 +1,6 @@
 #ProfessionalTypeName + button,input[type="text"],input[type="password"],input[type="email"],select,option,#FirstName,#LastName, .fake-input{
 	width: 100%;
-	@extend .fs_1;
+	@include fs_1;
 	@extend .p_01;
 	@extend .p-l_05;
 	@extend .p-r_05;
@@ -12,7 +12,7 @@
 #ProfessionalTypeName + button{ width:40%; }
 .input-description, .field-validation-valid, .field-validation-error {
 	@extend .p_05;
-	@extend .fs-1;
+	@include  fs__1;
 	@extend .p-t_01;
 	@extend .p-b_01;
 	@extend .lh-crushed;

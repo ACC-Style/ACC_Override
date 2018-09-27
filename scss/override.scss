@@ -28,9 +28,9 @@
 		border-top: $acc-blue 1px solid;
 		@extend .m-b_2;
 	}
-	.tiny-text{@extend .fs-2;}
+	.tiny-text{@include  fs__2;}
 	.btn{ 
-		@extend .fs_1;
+		@include fs_1;
 		@extend .p-r_2;
 		@extend .p-l_2; 
 	}
@@ -53,7 +53,7 @@
 	}	
 
 	.footer{
-		@extend .fs_1;
+		@include fs_1;
 		ul{ 
 			list-style: none;
 			@extend .lh-tight;
@@ -63,41 +63,44 @@
 
 }
 #acc-login-container{
-	h1{ @extend .fs_6; @extend .fw-m;  @extend .fc-acc-blue;}
-	h2{ @extend .fs_5; @extend .fw-m; @extend .fc-scrub-teal;}
-	h3{ @extend .fs_4; @extend .fc-scrub-teal;}
-	h4{ @extend .fs_3;}
-	h5{ @extend .fs_2; @extend .m-b_025;}
-	h6{ @extend .fs_1; @extend .m-b_025;}
+	h1{ @include fs_6; @extend .fw-m;  @extend .fc-acc-blue;}
+	h2{ @include fs_5; @extend .fw-m; @extend .fc-scrub-teal;}
+	h3{ @include fs_4; @extend .fc-scrub-teal;}
+	h4{ @include fs_3;}
+	h5{ @include fs_2; @extend .m-b_025;}
+	h6{ @include fs_1; @extend .m-b_025;}
 	p{ 
-		@extend .fs_0; @extend .lh-normal;
+		@include fs_0; @extend .lh-normal;
 		&.lead{
-			@extend .fs_1;
+			@include fs_1;
 			 @extend .lh-loose;
 		}
 
 	}
-	small{ @extend .fs-1;}
+	small{ @include  fs__1;}
 	@import "alc/professional-type";
 
 }
 #override-container{
 	@import "override/search-bar";	
-	h1{ @extend .fs_4; @extend .fw-m;  @extend .fc-acc-blue; @extend .m-b_025;}
-	h2{ @extend .fs_3; @extend .fw-m; @extend .fc-scrub-teal;}
-	h3{ @extend .fs_2; @extend .fc-scrub-teal;}
-	h4{ @extend .fs_1;}
-	h5{ @extend .fs_0; @extend .fw-m; @extend .fc-acc-blue; @extend .m-b_025;}
-	h6{ @extend .fs_0; @extend .fw-m;@extend .fc-scrub-teal; @extend .m-b_025;}
+	h1{ @include fs_4;}
+	h2{ @include fs_3;}
+	h3{ @include fs_2;}
+	h4{ @include fs_1;}
+	h5{ @include fs_0;}
+	h6{ @include fs_0;}
 	p{ 
-		@extend .fs_0; @extend .lh-normal;
+		@include  fs__2;
+		@extend .lh-normal;
 		&.lead{
-			@extend .fs_1;
+			@include  fs__1;
 			 @extend .lh-loose;
 		}
 
 	}
-	small{ @extend .fs-1;}
+	small{ @include  fs__3;}
+	.nav.nav-tabs{display:inline-block;width:100%;}
+	.nav-tabs>li {margin-bottom: -2px;}
 }
 
 
