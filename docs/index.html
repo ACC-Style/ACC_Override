@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/ACCBase.css">
     <link rel="stylesheet" href="css/bootstrap.css">
       <link rel="stylesheet" href="css/override.css">
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
@@ -55,7 +56,37 @@
      <hr>
      <h2>Search Results Page</h2>
       <div class="row">
-        <div class="col-md-4 col-lg-3"></div>
+        <div class="col-md-4 col-lg-3 p-r_0">
+          <!-- Side BAR -->
+          <div class="card border-grey-10 border-solid bw_1 mt_025 result">
+            <div class="card-header fs_1 p_05 p-b_0">
+              Title
+              <a class="card-link pull-right fs-1" data-toggle="collapse" href="#{{handle}}">
+                          <i class="fa fa-chevron-down"></i>
+                      </a>
+            </div>
+            <div id="{{handle}}" class="collapse show" data-parent="#accordion">
+              <div ng-if="data != undefined" class='p-l_1 p-r_025'>
+                <div ng-repeat="fc in data" class="m-t_025">
+                  <input type="checkbox" id="checkboxHolder" name="checkboxHolder">
+                  <label class="checkbox fs_0" for="checkboxHolder">Label <span class="fs-1 fc-grey-30">count</span></label>
+                </div>
+              </div>
+               <a class="bc-grey-10 p_025 display fc-grey-70 fs-2 m-t_025 ta-center" data-toggle="collapse" href="#{{handle}}">
+                         less
+                      </a>
+            </div>
+        </div>
+
+
+
+         <!--  Side BAR ENDS -->
+
+
+
+
+
+        </div>
         <div class="col-md-8 col-lg-9">
                  <ul class="nav nav-tabs" >
          <li class="active"><a href="">All Results</a></li>
